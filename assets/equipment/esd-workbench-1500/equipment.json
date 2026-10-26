@@ -1,0 +1,55 @@
+{
+  "id": "esd-workbench-1500",
+  "name": "防静电操作台",
+  "category": "实验 / 电子装配",
+  "version": 1,
+  "units": "mm",
+  "dimensions": {
+    "length": 1500,
+    "depth": 750,
+    "worktopHeight": 800,
+    "worktopThickness": 50,
+    "backboardHeightAboveWorktop": 1000,
+    "overallHeight": 1800
+  },
+  "materials": {
+    "worktop": { "description": "深墨绿色防静电台面，黑色包边", "color": "#00382d", "basis": "user-requested-darker-green" },
+    "panels": { "description": "工业冷轧钢挂板", "thickness": 1.0, "color": "#454b50", "basis": "user-confirmed" },
+    "legs": { "description": "C 型钢截面", "profile": "C", "width": 100, "depth": 45, "wallThickness": 1.7, "color": "#42484d", "basis": "user-confirmed" }
+  },
+  "features": { "doubleBackboard": true, "shelves": 2, "taskLight": true, "lightSwitch": true, "levelingFeet": true },
+  "inferred": {
+    "topShelfDepth": 220,
+    "middleShelfDepth": 160,
+    "middleShelfHeight": 1230,
+    "rearPostWidth": 45,
+    "rearPostDepth": 45,
+    "crossbarSize": 40,
+    "pegHoleSize": 6,
+    "pegHolePitch": 25,
+    "feetHeight": 25,
+    "outlet": "参考图右侧插座，仅做外形占位，规格待确认",
+    "light": "顶层搁板下方条形工作灯，右侧开关；功率和电气规格待确认",
+    "worktopConstruction": "仅表达台面总厚度与外观，内部基材待确认"
+  },
+  "placement": {
+    "origin": "地面占地中心",
+    "upAxis": "+Y",
+    "frontAxis": "+Z",
+    "widthAxis": "+X",
+    "recommendedFrontClearance": 1000,
+    "suggestedRearGap": 100,
+    "suggestedSideGap": 100,
+    "clearanceBasis": "空间试摆建议，可按实际工位需求调整",
+    "defaultPositionMetres": [3.52, 0.018, 0],
+    "defaultRotationYDegrees": -90,
+    "defaultLocation": "西侧白墙中段，面向室内"
+  },
+  "assets": { "reference": "reference.png", "model": "model.glb", "generator": "../../../src/equipment/workbench.js" },
+  "notes": [
+    "用户提供台面尺寸、台面高度、台面厚度、背板高度、挂板材质及厚度、桌腿截面及壁厚、灯和开关。",
+    "整机总高 1800 mm = 台面高 800 mm + 上部背板高 1000 mm。",
+    "参考图用于外观与结构比例；未确认的构件尺寸集中存放于 inferred。",
+    "模型用于办公室布局和外观预览；承重、防静电性能和电气参数尚未提供。"
+  ]
+}

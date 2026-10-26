@@ -1,0 +1,63 @@
+{
+  "id": "office-chair-z1",
+  "name": "云坐 Z1 人体工学椅",
+  "shortName": "办公椅",
+  "category": "办公家具",
+  "version": 1,
+  "units": "mm",
+  "dimensions": {
+    "length": 660,
+    "depth": 700,
+    "overallHeight": 1180,
+    "seatHeight": 500,
+    "seatWidth": 500,
+    "seatDepth": 500,
+    "lumbarWidth": 460,
+    "headrestWidth": 370,
+    "baseDiameter": 660,
+    "armrestHeight": 740
+  },
+  "confirmed": [
+    "扶手外宽 660 mm，五爪脚直径 660 mm",
+    "座面宽、深各 500 mm，腰托宽 460 mm，头枕宽 370 mm",
+    "座高范围 450–550 mm，总高范围 1080–1280 mm",
+    "扶手离地高度范围 690–790 mm，头枕上下调节行程 100 mm",
+    "最大后仰 135°；带伸缩脚托；灰框灰网配色"
+  ],
+  "adjustmentRanges": {
+    "seatHeight": [450, 550],
+    "overallHeight": [1080, 1280],
+    "armrestHeight": [690, 790],
+    "headrestTravel": 100,
+    "maximumReclineDegrees": 135
+  },
+  "inferred": {
+    "stowedFootprintDepth": 700,
+    "upperBackWidth": 524,
+    "upperBackHeight": 344,
+    "lumbarHeight": 182,
+    "headrestHeight": 158,
+    "armPadWidth": 70,
+    "armPadDepth": 232,
+    "casterDiameter": 64,
+    "footrestWidth": 352,
+    "footrestDepth": 182,
+    "footrestExtension": 430
+  },
+  "materials": {
+    "frame": { "description": "灰色哑光塑料框架", "color": "#a5aca8" },
+    "mesh": { "description": "灰色鱼骨纹透孔编织网面", "color": "#737b78" },
+    "base": { "description": "银灰色五爪脚与黑灰双轮脚轮" },
+    "hardware": { "description": "金属气杆、脚托导轨、石墨灰底盘" }
+  },
+  "features": ["曲面网面头枕", "分体网面靠背", "独立浮动腰托", "Y 字背部支撑", "6D 外形扶手", "135° 后仰展示", "伸缩网面脚托", "五爪双轮脚轮底座"],
+  "placement": { "origin": "地面占地中心", "upAxis": "+Y", "frontAxis": "+Z", "widthAxis": "+X" },
+  "assets": { "reference": "reference.png", "dimensionsReference": "dimensions.png", "model": "model.glb", "generator": "../../../src/equipment/office-chair.js" },
+  "notes": [
+    "依据用户提供的云坐 Z1 尺寸图和灰框灰网脚托款外观图制作；默认采用中间高度，座高 500 mm，总高约 1180 mm。",
+    "宽度为 660 mm；收纳深度按模型外形估算并取整预留为 700 mm，脚托展开与靠背后仰需要额外空间。",
+    "背框曲率、网纹、轮径、连接件、脚托行程和局部结构按参考图比例估算。",
+    "设备库可切换直立收纳与 135° 后仰、脚托展开姿态；扶手、头枕和腰托保留独立零件，未模拟全部调节自由度。",
+    "GLB 为默认直立收纳姿态，内嵌透孔网纹；模型用于外观和空间布局预览。"
+  ]
+}

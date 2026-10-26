@@ -1,0 +1,35 @@
+{
+  "name": "office-room",
+  "version": "1.0.0",
+  "description": "Interactive office and equipment studio, built with React, Vite and Three.js",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "node scripts/export-equipment.js && vite build && node scripts/standalone.js",
+    "equipment:export": "node scripts/export-equipment.js",
+    "test": "node --test scripts/*.test.js",
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "eslint .",
+    "check": "npm run lint && npm test && npm run build",
+    "format": "prettier --write src vite.config.js eslint.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "vite": "^8.3.4"
+  },
+  "private": true
+}

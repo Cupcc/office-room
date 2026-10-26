@@ -1,0 +1,46 @@
+{
+  "id": "office-desk-1400",
+  "name": "木纹侧柜办公桌",
+  "category": "办公家具",
+  "version": 2,
+  "units": "mm",
+  "dimensions": {
+    "length": 1400,
+    "depth": 700,
+    "overallHeight": 750,
+    "worktopHeight": 750,
+    "worktopThickness": 25
+  },
+  "confirmed": ["桌长 1400 mm", "桌深 700 mm", "桌面离地高度 750 mm", "桌面下面没有挡板"],
+  "inferred": {
+    "worktopThickness": 25,
+    "cabinetWidth": 330,
+    "cabinetDepth": 600,
+    "cabinetBodyHeight": 700,
+    "cabinetFootHeight": 20,
+    "cabinetFrontInset": 45,
+    "drawerFrontHeight": 160,
+    "legSectionWidth": 45,
+    "legSectionDepth": 50,
+    "legFootSpread": 600,
+    "cableCoverWidth": 240,
+    "cableCoverDepth": 60,
+    "cablePortDiameter": 40
+  },
+  "materials": {
+    "worktop": { "description": "浅橡木色木纹饰面", "color": "#bda586" },
+    "cabinet": { "description": "白色哑光柜体", "color": "#eff0ec" },
+    "legs": { "description": "白色喷涂金属 A 字形桌腿", "color": "#eceeea" },
+    "hardware": { "description": "银灰色走线盖、金属走线环、黑色锁具和脚垫" }
+  },
+  "features": ["左侧一抽一门柜体", "柜体锁具", "右侧 A 字形支撑", "桌面矩形走线盖", "侧柜内侧板双圆形走线孔", "桌面下面没有挡板", "调平脚垫"],
+  "placement": { "origin": "地面占地中心", "upAxis": "+Y", "frontAxis": "+Z", "widthAxis": "+X" },
+  "assets": { "reference": "reference.png", "model": "model.glb", "generator": "../../../src/equipment/office-desk.js" },
+  "notes": [
+    "长、深、高按用户明确尺寸建立；其余细部尺寸由参考图比例估算。",
+    "木纹、白色柜体、A 字腿、走线盖与圆形走线环按参考图还原。",
+    "桌面下面没有挡板；双圆形走线孔位于侧柜内侧板。",
+    "左侧抽屉可拉出、下柜门可开启，用于结构与外观预览。",
+    "模型单位米；尺寸可在参数化构建函数中调整。"
+  ]
+}
